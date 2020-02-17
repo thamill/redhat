@@ -237,16 +237,17 @@ satisfies:
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |-
-        This control will only be partially satisfied when OpenShift is
-        configured to connect to an Identity Provider (IdP).
+       Enforcement of organization-defined circumstances and/or usage
+       conditions is the responsibility of third party identity
+       management software such as Red Hat Identity Management (Red Hat IdM),
+       Active Directory (MSAD), LDAP, etc.
 
-        More work is being done to address this control. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-210
+       To configure an Identity Provider (IdP), refer to the "Authentication"
+       chapter of the OpenShift Container Platform documentation at
+       https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
@@ -712,16 +713,34 @@ satisfies:
       text: |
         Separation of duties is an organizational process outside the
         scope of OpenShift configuration.
+
+        However, to aide in such processes, note that OpenShift provides the capability to
+        implement Role-based Access Control (RBAC) which determine whether a
+        user is allowed to perform a given action. Documentation on the OpenShift RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
     - key: b
       text: |
         Documentation of the seperation of duties of individuals
         is an organizational control outside the scope of OpenShift
         configuration.
+
+        However, to aide in such processes, note that OpenShift provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the OpenShift RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
     - key: c
       text: |
         Organizational processes which define information system access
         authorizations to support separation of duties is outside
         the scope of OpenShift configuration.
+
+        However, to aide in such processes, note that OpenShift provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the OpenShift RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
 
 - control_key: AC-6
   standard_key: NIST-800-53
@@ -2043,7 +2062,6 @@ satisfies:
   narrative:
     - text: |
         A control response is planned. Engineering progress can be tracked via:
-
         https://issues.redhat.com/browse/CMP-167
 
 - control_key: AU-6 (2)
@@ -2065,6 +2083,18 @@ satisfies:
         situational awareness is outside the scope
         of OpenShift configuration.
 
+        To aide in such organizational processes, note that OpenShift's
+        cluster loggging "Log Forward" feature enables OpenShift
+        administrators to configure custom pipelines to send container
+        logs to remote destinations. These remote destinations, such as
+        Elastic or Splunk endpoints, could be used for information
+        system-wide correlation.
+
+        Documentation regarding how to forward cluster logs to specific
+        endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
+        
 - control_key: AU-6 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -2074,7 +2104,6 @@ satisfies:
         Organizational capability to centrally review and analyze
         audit records from multiple components within the system
         is outside the scope of OpenShift configuration.
-
         Note: When AU-4 (1) is enforced OpenShift will be configured
         to off-load audit records onto a different system
         or media than the system being audited. In practice this correlates
@@ -2095,6 +2124,18 @@ satisfies:
         enhance the ability to identify inappropriate or unusual
         activity is outside the scope of OpenShift configuration.
 
+        To aide in such organizational processes, note that OpenShift's
+        cluster loggging "Log Forward" feature enables OpenShift
+        administrators to configure custom pipelines to send container
+        logs to remote destinations. These remote destinations, such as
+        Elastic or Splunk endpoints, could be used for information
+        system-wide correlation.
+
+        Documentation regarding how to forward cluster logs to specific
+        endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
+
 - control_key: AU-6 (6)
   standard_key: NIST-800-53
   covered_by: []
@@ -2106,6 +2147,18 @@ satisfies:
         physical access to further enhanced the ability to identify
         suspicious, inappropriate, unusual, or malevolent activity
         is outside the scope of OpenShift configuration.
+
+        To aide in such organizational processes, note that OpenShift's
+        cluster loggging "Log Forward" feature enables OpenShift
+        administrators to configure custom pipelines to send container
+        logs to remote destinations. These remote destinations, such as
+        Elastic or Splunk endpoints, could be used to correlate OpenShift
+        logs with physical access data.
+
+        Documentation regarding how to forward cluster logs to specific
+        endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
 
 - control_key: AU-6 (7)
   standard_key: NIST-800-53
