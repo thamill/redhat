@@ -7621,13 +7621,12 @@ satisfies:
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - text: |
-        CoreOS allows for privileged scans to be performed using appropriate credentials, as
-        determined by organizational policy and procedures for vulnerability management.
-        Active OpenShift pods and the OpenShift interface should be scanned using appropriate
-        OpenShift credentials. OpenShift credentials are out of scope for CoreOS configuration.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-355
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
@@ -9210,18 +9209,11 @@ satisfies:
 - control_key: SC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer is responsible for separating user functionality
-        including user interface services) from information system management
-        functionality. A successful control response will indicate how user
-        and management functionality access is separated.
-
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-429
+        CoreOS separates user functionality and administration functionality with the use of
+        standard Linux user and group permission configuration.
 
 - control_key: SC-2 (1)
   standard_key: NIST-800-53

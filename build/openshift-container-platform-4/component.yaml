@@ -7626,14 +7626,12 @@ satisfies:
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - text: |
-        OpenShift privileged access credentials are intended to allow API access to containers
-        hosted by OpenShift. For the purpose of conducting a vulnerability scan of OpenShift,
-        the host CoreOS should be scanned using the appropriate tool. OpenShift supports
-        RBAC for users and groups, appropriate vulnerability scans can be performed against
-        the OpenShift web application interface.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-355
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
@@ -9222,18 +9220,13 @@ satisfies:
 - control_key: SC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer is responsible for separating user functionality
-        including user interface services) from information system management
-        functionality. A successful control response will indicate how user
-        and management functionality access is separated.
-
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-429
+        Application partitioning is implemented within OpenShift configuration by
+        enforcement of Role Based Access Control (RBAC) objects. RBAC objects support
+        separation of user functionality from admin functionality per project, and 
+        supports separation of project admin functionality from OpenShift admin functionality.
 
 - control_key: SC-2 (1)
   standard_key: NIST-800-53
