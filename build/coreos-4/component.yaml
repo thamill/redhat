@@ -7583,11 +7583,12 @@ satisfies:
 - control_key: RA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Organizational policy and procedures to employ and update the organizational
-        scanning appliance is outside the scope of Red Hat CoreOS configuration.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-353
 
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
@@ -7620,12 +7621,13 @@ satisfies:
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-355
+        CoreOS allows for privileged scans to be performed using appropriate credentials, as
+        determined by organizational policy and procedures for vulnerability management.
+        Active OpenShift pods and the OpenShift interface should be scanned using appropriate
+        OpenShift credentials. OpenShift credentials are out of scope for CoreOS configuration.
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53

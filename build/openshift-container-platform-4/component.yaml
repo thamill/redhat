@@ -7588,11 +7588,12 @@ satisfies:
 - control_key: RA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Organizational policy and procedures to employ and update the organizational
-        scanning appliance is outside the scope of OpenShift configuration.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-353
 
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
@@ -7625,12 +7626,14 @@ satisfies:
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-355
+        OpenShift privileged access credentials are intended to allow API access to containers
+        hosted by OpenShift. For the purpose of conducting a vulnerability scan of OpenShift,
+        the host CoreOS should be scanned using the appropriate tool. OpenShift supports
+        RBAC for users and groups, appropriate vulnerability scans can be performed against
+        the OpenShift web application interface.
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
