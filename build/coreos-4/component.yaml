@@ -8003,14 +8003,13 @@ satisfies:
 - control_key: SA-4 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        This is an organization procedural control out of scope for out-of-the-box CoreOS
-        configuration.
-        Recommended configuration of CoreOS is managed through the OpenShift Container Platform
-        cluster. Continous monitoring configuration and monitoring endpoints are documented as
-        part of the Red Hat engagement with the organization.
+        A control response to SA-4(8) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-365
 
 ##
 ## Developers note on SA-4 (9):
@@ -8022,13 +8021,14 @@ satisfies:
 - control_key: SA-4 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response to SA-4(9) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-366
+        Processing, Storage, and Service Location requirements for external service providers
+        is an organization procedural control. This is out of scope for OpenShift configuration.
+        Private cloud management can be performed with Red Hat Cloud Suite, please refer to
+        the documentation of that platform for capability and configuration of open private
+        hybrid cloud.
 
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
