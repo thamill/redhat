@@ -10417,13 +10417,13 @@ satisfies:
 - control_key: SC-30 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-516
+        Defining techniques to obsfuscate system components designated by the organization is
+        the sole responsibility of the customer, and an organization policy and procedure
+        control. CoreOS configuration should be done through the OpenShift Container Platforms
+        Machine Config Operator.
 
 - control_key: SC-31
   standard_key: NIST-800-53
@@ -10884,13 +10884,13 @@ satisfies:
 - control_key: SI-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        The customer is responsible for ensuring that after installing an updated version
-        of software and firmware that the old version is removed. Configuration of CoreOS
-        post-install is done through OpenShift Container Platform, including software installation
-        and removal with `yum`.
+        A control response for SI-2(6) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-528
 
 - control_key: SI-3
   standard_key: NIST-800-53
