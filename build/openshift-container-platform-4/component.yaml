@@ -10441,20 +10441,21 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-515
+        The customer is solely responsible for implementing a strategy to mislead
+        adversarial actors with regard to the organizations securite state or posture.
+        This is an organizational policy and procedure control that OpenShift configuration 
+        cannot satisfy, although use of the product could be part of the implementation strategy.
 
 - control_key: SC-30 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Defining techniques to obsfuscate system components designated by the organization is
-        the sole responsibility of the customer. Naming of OpenShift configured components can
-        be done using the normal OpenShift configuration methods.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-516
 
 - control_key: SC-31
   standard_key: NIST-800-53

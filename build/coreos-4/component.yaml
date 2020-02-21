@@ -10409,21 +10409,20 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-515
+        Employing misleading information is an organizational procedure control that is
+        outside the scope of CoreOS use. Any supplementary use of CoreOS should be
+        implemented through the OpenShift Container Platform management tools.
 
 - control_key: SC-30 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Defining techniques to obsfuscate system components designated by the organization is
-        the sole responsibility of the customer, and an organization policy and procedure
-        control. CoreOS configuration should be done through the OpenShift Container Platforms
-        Machine Config Operator.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-516
 
 - control_key: SC-31
   standard_key: NIST-800-53
